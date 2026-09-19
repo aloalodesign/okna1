@@ -1,356 +1,482 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GLASO — тёплые окна под ключ</title>
-<meta name="description" content="GLASO — тёплые и тихие окна под ключ: замер, производство, монтаж по ГОСТ. Гарантия 10 лет.">
+<title>OKNA — окна под ключ: продажа и установка</title>
+<meta name="description" content="Окна под ключ без лишних забот: замер, производство, монтаж, гарантия 10 лет. Пластиковые, алюминиевые, панорамные окна.">
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.className += " js";</script>
-<script src="js/app.js" defer></script>
 </head>
 <body>
 
-<!-- ================= HEADER — minimal ================= -->
-<header class="header">
-  <div class="container header__inner">
-    <a class="header__logo" href="#hero">Glaso.</a>
-    <nav class="header__nav" aria-label="Основная навигация">
-      <a href="#series">Серии</a>
-      <a href="#calc">Калькулятор</a>
-      <a href="#tech">Технология</a>
-      <a href="#faq">FAQ</a>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a class="navbar__logo" href="#hero">Okna</a>
+    <nav class="navbar__links" aria-label="Основная навигация">
+      <a href="#types">Окна</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#config">Калькулятор</a>
+      <a href="#projects">Проекты</a>
+      <a href="#montage">Монтаж</a>
     </nav>
-    <div class="header__cta">
-      <button class="btn btn--accent" data-cta>Вызвать замерщика</button>
+    <div class="navbar__cta">
+      <a class="navbar__phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
+      <a class="btn btn--white" data-cta>Вызвать замерщика</a>
       <button class="burger" id="burgerBtn" aria-label="Открыть меню">☰</button>
     </div>
   </div>
 </header>
 
-<main>
-
-<!-- ================= HERO — massive editorial ================= -->
-<section class="hero container" id="hero">
-  <div class="hero__head">
-    <h1 class="h1 rv-t">Тёплые окна.<br>Тихие окна.<br>Под ключ.</h1>
-    <div class="hero__copy">
-      <p class="lead rv-t" style="--d: 100ms">Проектируем и устанавливаем окна, которые работают десятилетиями: энергосберегающие стеклопакеты, профиль класса А, монтаж по ГОСТ 30971.</p>
-      <a class="text-cta rv-t" style="--d: 180ms" href="#series">↘ Смотреть серии</a>
+<!-- ================= 01 HERO ================= -->
+<section class="hero" id="hero">
+  <img class="hero__img" src="img/01-hero-guest-room-wide.jpg" alt="Современное панорамное остекление">
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <span class="eyebrow eyebrow--ghost">Окна под ключ</span>
+    <h1 class="h-hero">Окна под ключ<br>без лишних забот</h1>
+    <p class="body" style="color: rgba(255,255,255,.82); max-width: 56ch;">Замер, производство, доставка и монтаж — один договор, одна ответственность, гарантия 10 лет.</p>
+    <div class="hero__actions">
+      <a class="btn btn--white btn--lg" data-cta>Бесплатный замер</a>
+      <a class="btn btn--ghost btn--lg" href="#catalog">Смотреть каталог</a>
     </div>
-  </div>
-  <div class="hero__img-wrap rv-hero">
-    <img class="hero__img" src="img/01-hero-guest-room-wide.jpg" alt="Панорамное окно в современном интерьере">
-  </div>
-</section>
-
-<!-- ================= WHY — editorial split + stats ================= -->
-<section class="section container" id="why">
-  <div class="split">
-    <h2 class="h2 rv-t dim">Почему<br>Glaso?</h2>
-    <div style="display: grid; gap: var(--space-5); align-content: end;">
-      <p class="body rv-t">Мы делаем окна, которые не нужно переделывать: точный замер, собственный завод, аккуратный монтаж и честная цена в договоре.</p>
-      <p class="body rv-t" style="--d: 90ms">Каждая конструкция собирается под конкретный проём — без усреднённых решений и скрытых доплат.</p>
-      <p class="t-lg rv-t" style="--d: 180ms">Тёплый монтаж. Честная цена. Окно на десятилетия.</p>
+    <div class="hero__stats">
+      <div class="hero__stat"><b>18 лет</b><span>на рынке остекления</span></div>
+      <div class="hero__stat"><b>42 000+</b><span>установленных окон</span></div>
+      <div class="hero__stat"><b>10 лет</b><span>гарантии по договору</span></div>
     </div>
+    <span class="hero__note">Замер сегодня — монтаж от 3 дней</span>
   </div>
-  <hr class="rule">
-  <div class="stats rv-t">
-    <div class="stat"><b>42 000+</b><span>окон установлено под ключ</span></div>
-    <div class="stat"><b>18 лет</b><span>производим окна в Москве</span></div>
-    <div class="stat"><b>10 лет</b><span>гарантии по договору</span></div>
-    <div class="stat"><b>98%</b><span>клиентов рекомендуют нас</span></div>
+  <div class="social-rail" aria-label="Соцсети">
+    <a href="#" aria-label="Telegram">TG</a>
+    <a href="#" aria-label="VK">VK</a>
+    <a href="#" aria-label="WhatsApp">WA</a>
   </div>
 </section>
 
-<hr class="rule">
-
-<!-- ================= SERIES — numbered editorial projects ================= -->
-<section class="section container" id="series">
-  <div class="section-head section-head--center">
-    <h2 class="h2 rv-t dim">Серии окон</h2>
-    <p class="lead rv-t" style="--d: 100ms; margin-inline: auto;">Три конструктивные линии — от классики для квартиры до панорам для дома. Цена «под ключ»: замер, демонтаж, монтаж, откосы.</p>
-  </div>
-
-  <article class="project">
-    <div class="project__text">
-      <span class="project__num rv-t">1.</span>
-      <h3 class="h3 rv-t" style="--d: 80ms">Серия «Норд»</h3>
-      <p class="body rv-t" style="--d: 160ms">Базовая линия для квартир: пятикамерный профиль 70 мм, двухкамерный стеклопакет с i-стеклом, два контура уплотнения. Тихая, тёплая, честная.</p>
-      <div class="project__spec rv-t" style="--d: 220ms">
-        <span>Профиль 70 мм</span><span>i-стекло</span><span>Шум −38 dB</span><span>Монтаж 1 день</span>
+<!-- ================= 02 ТИПЫ ОКОН ================= -->
+<section class="section" id="types">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Типы окон</span>
+        <h2 class="h-section">Решение под любой проём</h2>
       </div>
-      <div class="project__foot rv-t" style="--d: 280ms">
-        <span class="project__price"><span>под ключ от</span> 9 900 ₽</span>
-        <button class="text-cta" data-order="nord">→ Заказать</button>
-      </div>
+      <a class="btn btn--outline" href="#catalog">Весь каталог →</a>
     </div>
-    <div class="project__img-wrap">
-      <img class="project__img" src="img/11-product-bedroom.jpg" alt="Серия Норд — окно в светлой спальне" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project project--rev">
-    <div class="project__text">
-      <span class="project__num rv-t">2.</span>
-      <h3 class="h3 rv-t" style="--d: 80ms">Серия «Фьорд»</h3>
-      <p class="body rv-t" style="--d: 160ms">Энерголиния для домов и первых этажей: шестикамерный профиль 82 мм, трёхкамерный стеклопакет с мультифункциональным стеклом. Держит тепло и режет летнюю жару.</p>
-      <div class="project__spec rv-t" style="--d: 220ms">
-        <span>Профиль 82 мм</span><span>3 контура</span><span>Мультистекло</span><span>Аргон</span>
-      </div>
-      <div class="project__foot rv-t" style="--d: 280ms">
-        <span class="project__price"><span>под ключ от</span> 19 500 ₽</span>
-        <button class="text-cta" data-order="fjord">→ Заказать</button>
-      </div>
-    </div>
-    <div class="project__img-wrap">
-      <img class="project__img" src="img/09-type-house.jpg" alt="Серия Фьорд — большие окна в загородном доме" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="project__text">
-      <span class="project__num rv-t">3.</span>
-      <h3 class="h3 rv-t" style="--d: 80ms">Серия «Панорама»</h3>
-      <p class="body rv-t" style="--d: 160ms">Архитектурная линия: сдвижные и стационарные композиции до 6 метров, скрытый профиль, тёплый алюминий с терморазрывом. Свет становится интерьером.</p>
-      <div class="project__spec rv-t" style="--d: 220ms">
-        <span>До 6 м</span><span>Терморазрыв</span><span>Скрытый профиль</span><span>Slide / Стационар</span>
-      </div>
-      <div class="project__foot rv-t" style="--d: 280ms">
-        <span class="project__price"><span>под ключ от</span> 42 000 ₽</span>
-        <button class="text-cta" data-order="pano">→ Заказать</button>
-      </div>
-    </div>
-    <div class="project__img-wrap">
-      <img class="project__img" src="img/06-type-panorama.jpg" alt="Серия Панорама — остекление террасы" loading="lazy">
-    </div>
-  </article>
-</section>
-
-<hr class="rule">
-
-<!-- ================= TECHNOLOGY — 25/75 list ================= -->
-<section class="section container" id="tech">
-  <div class="split">
-    <div style="display: grid; gap: var(--space-5); align-content: start; position: sticky; top: var(--space-6);">
-      <h2 class="h2 rv-t dim">Конструкция</h2>
-      <p class="body rv-t" style="--d: 100ms">Прозрачность на уровне комплектующих: вы точно знаете, из чего собрано ваше окно.</p>
-    </div>
-    <div class="constr-list">
-      <div class="constr-item rv-t">
-        <span class="constr-item__num">01</span>
-        <h3>Профиль</h3>
-        <span class="constr-item__spec">5–6 камер · 70–82 мм</span>
-        <p>Армированный ПВХ класса А. Толщина стенок по нормативу — без «эконом» исполнений.</p>
-      </div>
-      <div class="constr-item rv-t" style="--d: 60ms">
-        <span class="constr-item__num">02</span>
-        <h3>Стеклопакет</h3>
-        <span class="constr-item__spec">2–3 контура · i / мульти</span>
-        <p>Энергосберегающее и мультифункциональное остекление, аргон между стёклами — опция.</p>
-      </div>
-      <div class="constr-item rv-t" style="--d: 120ms">
-        <span class="constr-item__num">03</span>
-        <h3>Фурнитура</h3>
-        <span class="constr-item__spec">Roto · Siegenia</span>
-        <p>Немецкая механика с микролифтом и защитой от провисания. Ресурс — десятки лет.</p>
-      </div>
-      <div class="constr-item rv-t" style="--d: 180ms">
-        <span class="constr-item__num">04</span>
-        <h3>Уплотнители</h3>
-        <span class="constr-item__spec">2 контура · EPDM</span>
-        <p>Морозостойкий каучук: не задубевает зимой и не пересыхает летом.</p>
-      </div>
-      <div class="constr-item rv-t" style="--d: 240ms">
-        <span class="constr-item__num">05</span>
-        <h3>Монтажный шов</h3>
-        <span class="constr-item__spec">ГОСТ 30971</span>
-        <p>ПСУЛ снаружи, пена внутри, пароизоляция изнутри. Шов живёт весь срок службы окна.</p>
-      </div>
+    <div class="types-grid reveal">
+      <a class="type-card" href="#catalog" data-type="pvc">
+        <img src="img/04-type-pvc.jpg" alt="Пластиковые окна" loading="lazy">
+        <span class="type-card__label">Пластиковые <span>от 9 900 ₽</span></span>
+      </a>
+      <a class="type-card" href="#catalog" data-type="alu">
+        <img src="img/05-type-alu.jpg" alt="Алюминиевые окна" loading="lazy">
+        <span class="type-card__label">Алюминиевые <span>от 14 500 ₽</span></span>
+      </a>
+      <a class="type-card" href="#catalog" data-type="pano">
+        <img src="img/06-type-panorama.jpg" alt="Панорамные окна" loading="lazy">
+        <span class="type-card__label">Панорамные <span>от 28 000 ₽</span></span>
+      </a>
+      <a class="type-card" href="#catalog" data-type="slide">
+        <img src="img/07-type-sliding.jpg" alt="Раздвижные окна" loading="lazy">
+        <span class="type-card__label">Раздвижные <span>от 21 000 ₽</span></span>
+      </a>
+      <a class="type-card" href="#catalog" data-type="balcony">
+        <img src="img/08-type-balcony.jpg" alt="Остекление балконов" loading="lazy">
+        <span class="type-card__label">Балконы <span>от 12 900 ₽</span></span>
+      </a>
+      <a class="type-card" href="#catalog" data-type="house">
+        <img src="img/09-type-house.jpg" alt="Окна для частных домов" loading="lazy">
+        <span class="type-card__label">Частные дома <span>от 19 500 ₽</span></span>
+      </a>
     </div>
   </div>
 </section>
 
-<hr class="rule">
-
-<!-- ================= CALCULATOR ================= -->
-<section class="section container" id="calc">
-  <div class="section-head">
-    <h2 class="h2 rv-t dim">Калькулятор</h2>
-    <p class="lead rv-t" style="--d: 100ms">Соберите окно и узнайте предварительную цену «под ключ». Точную стоимость зафиксирует замерщик.</p>
+<!-- ================= 03 КАТАЛОГ ================= -->
+<section class="section section--dark-surface" id="catalog">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Каталог</span>
+        <h2 class="h-section">Окна с монтажом «под ключ»</h2>
+        <p class="body">Цена включает замер, демонтаж старого окна, монтаж, отделку откосов и вывоз мусора.</p>
+      </div>
+    </div>
+    <div class="catalog-bar" role="toolbar" aria-label="Фильтры каталога">
+      <button class="filter-chip" data-filter="all" aria-pressed="true">Все</button>
+      <button class="filter-chip" data-filter="pvc" aria-pressed="false">Пластиковые</button>
+      <button class="filter-chip" data-filter="alu" aria-pressed="false">Алюминиевые</button>
+      <button class="filter-chip" data-filter="pano" aria-pressed="false">Панорамные</button>
+      <button class="filter-chip" data-filter="slide" aria-pressed="false">Раздвижные</button>
+      <button class="filter-chip" data-filter="balcony" aria-pressed="false">Балконы</button>
+      <button class="filter-chip" data-filter="house" aria-pressed="false">Частные дома</button>
+      <select id="sortSelect" aria-label="Сортировка">
+        <option value="popular">Сначала популярные</option>
+        <option value="price-asc">Цена: по возрастанию</option>
+        <option value="price-desc">Цена: по убыванию</option>
+      </select>
+    </div>
+    <div class="products-grid" id="catalogGrid" aria-live="polite"></div>
+    <p class="catalog-empty" id="catalogEmpty" hidden>Ничего не найдено — попробуйте другой фильтр</p>
   </div>
-  <div class="calc">
-    <div>
-      <div class="calc__step rv-t">
-        <div class="calc__step-head"><span class="calc__step-title">Размер, мм</span><span class="calc__step-num">01</span></div>
-        <div class="calc__size">
-          <input id="cfgW" type="number" value="1400" min="600" max="4000" step="100" aria-label="Ширина окна в мм">
-          <span class="caption">×</span>
-          <input id="cfgH" type="number" value="1400" min="600" max="2600" step="100" aria-label="Высота окна в мм">
+</section>
+
+<!-- ================= 04 КАЛЬКУЛЯТОР-КОНФИГУРАТОР ================= -->
+<section class="section" id="config">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Калькулятор</span>
+        <h2 class="h-section">Соберите своё окно и узнайте цену</h2>
+        <p class="body">Расчёт предварительный: точную цену зафиксирует замерщик после выезда.</p>
+      </div>
+    </div>
+    <div class="config reveal">
+      <div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">01</span><span class="config__step-title">Размер, мм</span></div>
+          <div class="config__qty">
+            <input id="cfgW" type="number" value="1400" min="600" max="4000" step="100" aria-label="Ширина окна в мм">
+            <span style="font-size: 20px;">×</span>
+            <input id="cfgH" type="number" value="1400" min="600" max="2600" step="100" aria-label="Высота окна в мм">
+          </div>
+        </div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">02</span><span class="config__step-title">Тип конструкции</span></div>
+          <div class="config__options" id="cfgType"></div>
+        </div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">03</span><span class="config__step-title">Профиль</span></div>
+          <div class="config__options" id="cfgProfile"></div>
+        </div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">04</span><span class="config__step-title">Стеклопакет</span></div>
+          <div class="config__options" id="cfgGlass"></div>
+        </div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">05</span><span class="config__step-title">Фурнитура</span></div>
+          <div class="config__options" id="cfgFurn"></div>
+        </div>
+        <div class="config__step">
+          <div class="config__step-head"><span class="config__step-num">06</span><span class="config__step-title">Количество створок</span></div>
+          <div class="config__qty">
+            <button id="cfgMinus" aria-label="Меньше створок">−</button>
+            <input id="cfgSashes" type="number" value="2" min="1" max="6" aria-label="Количество створок">
+            <button id="cfgPlus" aria-label="Больше створок">+</button>
+          </div>
         </div>
       </div>
-      <div class="calc__step rv-t" style="--d: 60ms">
-        <div class="calc__step-head"><span class="calc__step-title">Линия</span><span class="calc__step-num">02</span></div>
-        <div class="calc__options" id="cfgType"></div>
+      <aside class="config__summary">
+        <h3 class="title-sm">Ваша конфигурация</h3>
+        <div id="cfgRows"></div>
+        <div class="config__sum"><span>Предварительно «под ключ»</span><strong id="cfgSum">0 ₽</strong></div>
+        <button class="btn btn--primary btn--lg" id="cfgOrder" style="width: 100%;">Зафиксировать цену</button>
+        <p class="caption" style="text-align: center;">Бесплатный замер · Гарантия 10 лет · Оплата после монтажа</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 ПРОБЛЕМА → РЕШЕНИЕ ================= -->
+<section class="section section--tight" id="problems">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Знакомые проблемы</span>
+        <h2 class="h-section">Каждую решаем конструкцией</h2>
       </div>
-      <div class="calc__step rv-t" style="--d: 120ms">
-        <div class="calc__step-head"><span class="calc__step-title">Профиль</span><span class="calc__step-num">03</span></div>
-        <div class="calc__options" id="cfgProfile"></div>
+    </div>
+    <div class="problems-grid reveal">
+      <article class="problem-card">
+        <span class="problem-card__num">01</span>
+        <h3 class="problem-card__problem">Дует и холодно</h3>
+        <p class="problem-card__solution"><b>Решение:</b> пятикамерный профиль, двухконтурное уплотнение и монтажный шов по ГОСТ 30971 — тепло остаётся внутри.</p>
+      </article>
+      <article class="problem-card">
+        <span class="problem-card__num">02</span>
+        <h3 class="problem-card__problem">Слышно каждый мотоцикл</h3>
+        <p class="problem-card__solution"><b>Решение:</b> шумозащитный стеклопакет с ассиметричными стёклами снижает уличный шум до −42 dB.</p>
+      </article>
+      <article class="problem-card">
+        <span class="problem-card__num">03</span>
+        <h3 class="problem-card__problem">Жара на солнечной стороне</h3>
+        <p class="problem-card__solution"><b>Решение:</b> мультифункциональное стекло с напылением отражает до 60% солнечного тепла, не затемняя комнату.</p>
+      </article>
+      <article class="problem-card">
+        <span class="problem-card__num">04</span>
+        <h3 class="problem-card__problem">Плачут откосы и стекло</h3>
+        <p class="problem-card__solution"><b>Решение:</b> энергоэффективный стеклопакет + правильный монтаж убирают точку росы — конденсат исчезает.</p>
+      </article>
+      <article class="problem-card">
+        <span class="problem-card__num">05</span>
+        <h3 class="problem-card__problem">Большой проём, нечем закрыть</h3>
+        <p class="problem-card__solution"><b>Решение:</b> панорамное и раздвижное остекление до 6 метров без потери прочности и эстетики.</p>
+      </article>
+      <article class="problem-card">
+        <span class="problem-card__num">06</span>
+        <h3 class="problem-card__problem">Старое окно — сквозняк и грибок</h3>
+        <p class="problem-card__solution"><b>Решение:</b> замена «под ключ» с демонтажом, гидроизоляцией шва и отделкой откосов за один день.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 ПРОЕКТЫ ================= -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Проекты</span>
+        <h2 class="h-section">Объекты, которыми мы гордимся</h2>
       </div>
-      <div class="calc__step rv-t" style="--d: 180ms">
-        <div class="calc__step-head"><span class="calc__step-title">Стеклопакет</span><span class="calc__step-num">04</span></div>
-        <div class="calc__options" id="cfgGlass"></div>
+      <a class="btn btn--outline" href="#reviews">Отзывы клиентов →</a>
+    </div>
+    <div class="gallery reveal">
+      <figure class="gallery__item gallery__item--a"><img src="img/01-hero-guest-room-wide.jpg" alt="Панорамное остекление гостиной" loading="lazy"><figcaption class="gallery__cap">Панорама в гостиной · ЖК «Символ»</figcaption></figure>
+      <figure class="gallery__item gallery__item--b"><img src="img/03-house-facade.jpg" alt="Окно в загородном доме" loading="lazy"><figcaption class="gallery__cap">Загородный дом · Истра</figcaption></figure>
+      <figure class="gallery__item gallery__item--c"><img src="img/07-type-sliding.jpg" alt="Раздвижное остекление террасы" loading="lazy"><figcaption class="gallery__cap">Терраса · Одинцово</figcaption></figure>
+      <figure class="gallery__item gallery__item--d"><img src="img/08-type-balcony.jpg" alt="Остекление балкона" loading="lazy"><figcaption class="gallery__cap">Балкон 6 м² · Москва</figcaption></figure>
+      <figure class="gallery__item gallery__item--e"><img src="img/05-type-alu.jpg" alt="Алюминиевое остекление фасада" loading="lazy"><figcaption class="gallery__cap">Фасад кафе · Химки</figcaption></figure>
+      <figure class="gallery__item gallery__item--f"><img src="img/02-hero-window-tall.jpg" alt="Мансардное остекление" loading="lazy"><figcaption class="gallery__cap">Мансарда · Пятницкое шоссе</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 КОНСТРУКЦИЯ ОКНА ================= -->
+<section class="section section--dark-surface" id="construction">
+  <div class="container">
+    <div class="split split--rev">
+      <div class="split__img split__img--tall reveal">
+        <img src="img/10-product-detail.jpg" alt="Разрез оконной конструкции" loading="lazy">
+        <div class="floating-card">
+          <h4 class="title-sm">Монтажный шов по ГОСТ</h4>
+          <p class="small">ПСУЛ-лента снаружи, пароизоляция изнутри — шов живёт весь срок службы окна.</p>
+          <div class="floating-card__foot"><button class="btn btn--primary" style="height: 38px; font-size: 14px;" data-cta>Хочу так же</button><span class="caption">ГОСТ 30971-2012</span></div>
+        </div>
       </div>
-      <div class="calc__step rv-t" style="--d: 240ms">
-        <div class="calc__step-head"><span class="calc__step-title">Створки</span><span class="calc__step-num">05</span></div>
-        <div class="calc__size">
-          <input id="cfgSashes" type="number" value="2" min="1" max="6" aria-label="Количество створок">
-          <span class="caption">от 1 до 6 · каждая створка свыше двух +2 400 ₽</span>
+      <div class="split__text">
+        <span class="eyebrow">Конструкция</span>
+        <h2 class="h-section">Из чего состоит ваше окно</h2>
+        <p class="body">Прозрачность на уровне комплектующих: вы точно знаете, за что платите.</p>
+        <div class="anatomy__list reveal">
+          <div class="anatomy-item">
+            <div class="anatomy-item__head"><span class="anatomy-item__title">Профиль</span><span class="anatomy-item__spec">5–6 камер · 70–82 мм</span></div>
+            <p>Армированный ПВХ-профиль класса А. Толщина стенок по нормативу, не «эконом».</p>
+          </div>
+          <div class="anatomy-item">
+            <div class="anatomy-item__head"><span class="anatomy-item__title">Стеклопакет</span><span class="anatomy-item__spec">2–3 контура · i-стекло</span></div>
+            <p>Энергосберегающее и мультифункциональное остекление. Аргон между стёклами — опция.</p>
+          </div>
+          <div class="anatomy-item">
+            <div class="anatomy-item__head"><span class="anatomy-item__title">Фурнитура</span><span class="anatomy-item__spec">Roto / Siegenia</span></div>
+            <p>Немецкая противовзломная фурнитура с микролифтом и защитой от провисания.</p>
+          </div>
+          <div class="anatomy-item">
+            <div class="anatomy-item__head"><span class="anatomy-item__title">Уплотнители</span><span class="anatomy-item__spec">2 контура · EPDM</span></div>
+            <p>Морозостойкий каучук: не задубевает на морозе и не пересыхает летом.</p>
+          </div>
+          <div class="anatomy-item">
+            <div class="anatomy-item__head"><span class="anatomy-item__title">Монтажный шов</span><span class="anatomy-item__spec">ГОСТ 30971</span></div>
+            <p>Трёхслойный шов: пароизоляция, пена, ПСУЛ. Никакой монтажной пены «голую».</p>
+          </div>
         </div>
       </div>
     </div>
-    <aside class="calc__summary rv-t">
-      <h3 class="t-lg">Ваша конфигурация</h3>
-      <div id="cfgRows"></div>
-      <div class="calc__sum"><span>под ключ</span><strong id="cfgSum">0 ₽</strong></div>
-      <button class="btn btn--accent btn--lg" id="cfgOrder" style="width: 100%;">Зафиксировать цену</button>
-      <p class="caption" style="text-align: center;">Бесплатный замер · Гарантия 10 лет · Оплата после монтажа</p>
-    </aside>
   </div>
 </section>
 
-<hr class="rule">
-
-<!-- ================= PROCESS ================= -->
-<section class="section container" id="process">
-  <div class="section-head">
-    <h2 class="h2 rv-t dim">Три шага<br>до нового окна</h2>
-  </div>
-  <div class="process">
-    <div class="process__step rv-t">
-      <span class="micro">01</span>
-      <h3>Замер</h3>
-      <p>Инженер приезжает бесплатно, снимает размеры с точностью до миллиметра и предлагает конструкцию под ваши задачи.</p>
-    </div>
-    <div class="process__step rv-t" style="--d: 90ms">
-      <span class="micro">02</span>
-      <h3>Производство</h3>
-      <p>Окно собирается на собственном заводе под ваш замер за 2–4 дня и приезжает в защитной упаковке.</p>
-    </div>
-    <div class="process__step rv-t" style="--d: 180ms">
-      <span class="micro">03</span>
-      <h3>Монтаж</h3>
-      <p>Устанавливаем по ГОСТ 30971 за один день, делаем откосы, вывозим мусор и подписываем акт с гарантией 10 лет.</p>
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ================= FAQ ================= -->
-<section class="section container" id="faq">
-  <div class="section-head">
-    <h2 class="h2 rv-t dim">Вопросы</h2>
-  </div>
-  <div class="faq rv-t">
-    <details>
-      <summary>Сколько занимает установка?</summary>
-      <p class="faq__a body">Демонтаж и монтаж одного окна — от 2 до 4 часов. Откосы делаем в тот же визит. От замера до монтажа обычно проходит 3–7 дней.</p>
-    </details>
-    <details>
-      <summary>Что входит в цену «под ключ»?</summary>
-      <p class="faq__a body">Замер, окно по вашим размерам, демонтаж старого блока, монтаж по ГОСТ 30971, отделка откосов, подоконник и вывоз мусора. Без скрытых доплат.</p>
-    </details>
-    <details>
-      <summary>Окна не будут промерзать?</summary>
-      <p class="faq__a body">Нет: профиль от 70 мм, энергоэффективный стеклопакет и правильно выполненный монтажный шов исключают промерзание и конденсат.</p>
-    </details>
-    <details>
-      <summary>Можно ли оплатить частями?</summary>
-      <p class="faq__a body">Да: рассрочка 0-0-6 без переплаты, кредит от банка-партнёра, безналичная оплата для юридических лиц.</p>
-    </details>
-    <details>
-      <summary>Что с гарантией?</summary>
-      <p class="faq__a body">10 лет на конструкцию и монтаж по договору. Сервисное регулировка фурнитуры — бесплатно в течение первого года.</p>
-    </details>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ================= CONTACTS + MAP ================= -->
-<section class="section container" id="contacts">
-  <div class="consult">
-    <div class="consult__text">
-      <h2 class="h2 rv-t dim">Контакты</h2>
-      <p class="lead rv-t" style="--d: 100ms">Москва, ш. Энтузиастов, 17 — шоурум и производство. Приезжайте: покажем профили и стеклопакеты вживую и рассчитаем окна на месте.</p>
-      <div class="consult__contact rv-t" style="--d: 180ms">
-        <button class="btn btn--accent btn--lg" data-cta>Вызвать замерщика — бесплатно</button>
-        <a class="consult__phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
-        <span class="caption">Ежедневно 8:00–22:00 · hi@glaso.ru</span>
+<!-- ================= 08 МОНТАЖ ================= -->
+<section class="section" id="montage">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Монтаж</span>
+        <h2 class="h-section">Шесть шагов до нового окна</h2>
+        <p class="body">Один договор на весь цикл. Вы видите статус каждого этапа в личном кабинете.</p>
       </div>
     </div>
-    <div class="contacts-map">
-      <div class="map-box" role="img" aria-label="Карта: Москва, ш. Энтузиастов, 17 — GLASO">
-        <div class="map-pin"></div>
-        <span class="map-box__label">Мы здесь · Москва, ш. Энтузиастов, 17</span>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step__img"><img src="img/14-step-measure.jpg" alt="Замер" loading="lazy"></div>
+        <span class="step__num">01</span>
+        <h3 class="step__title">Замер</h3>
+        <p class="step__text">Инженер выезжает бесплатно, фиксирует проём с точностью до миллиметра.</p>
+      </div>
+      <div class="step">
+        <div class="step__img"><img src="img/15-step-factory.jpg" alt="Производство" loading="lazy"></div>
+        <span class="step__num">02</span>
+        <h3 class="step__title">Производство</h3>
+        <p class="step__text">Окно собирается на собственном заводе под ваш замер за 2–4 дня.</p>
+      </div>
+      <div class="step">
+        <div class="step__img"><img src="img/16-step-delivery.jpg" alt="Доставка" loading="lazy"></div>
+        <span class="step__num">03</span>
+        <h3 class="step__title">Доставка</h3>
+        <p class="step__text">Привозим в защитной упаковке точно к назначенному времени.</p>
+      </div>
+      <div class="step">
+        <div class="step__img"><img src="img/17-step-demontage.jpg" alt="Демонтаж" loading="lazy"></div>
+        <span class="step__num">04</span>
+        <h3 class="step__title">Демонтаж</h3>
+        <p class="step__text">Аккуратно убираем старое окно и вывозим весь мусор.</p>
+      </div>
+      <div class="step">
+        <div class="step__img"><img src="img/18-step-install.jpg" alt="Монтаж" loading="lazy"></div>
+        <span class="step__num">05</span>
+        <h3 class="step__title">Монтаж</h3>
+        <p class="step__text">Установка по ГОСТ 30971 с гидро- и пароизоляцией шва. Откосы в тот же день.</p>
+      </div>
+      <div class="step">
+        <div class="step__img"><img src="img/19-step-adjust.jpg" alt="Регулировка" loading="lazy"></div>
+        <span class="step__num">06</span>
+        <h3 class="step__title">Регулировка</h3>
+        <p class="step__text">Настраиваем прижим, смазываем фурнитуру и подписываем акт с гарантией.</p>
       </div>
     </div>
   </div>
 </section>
 
-</main>
+<!-- ================= 10 ДОПОЛНИТЕЛЬНЫЕ РЕШЕНИЯ ================= -->
+<section class="section" id="addons">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Дополнения</span>
+        <h2 class="h-section">Доводим до идеала</h2>
+      </div>
+    </div>
+    <div class="addons-grid reveal">
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/22-addon-sill.jpg" alt="Подоконники" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Подоконники</h3><p class="small">ПВХ, искусственный камень, дерево. От 1 400 ₽ за метр.</p></div>
+      </article>
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/18-step-install.jpg" alt="Откосы" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Откосы</h3><p class="small">Сэндвич-панели или штукатурка с утеплением. От 900 ₽/м.</p></div>
+      </article>
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/23-addon-mosquito.jpg" alt="Москитные сетки" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Москитные сетки</h3><p class="small">Рамочные, раздвижные, плиссе для дверей. От 1 200 ₽.</p></div>
+      </article>
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/10-product-detail.jpg" alt="Замки и ручки" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Ручки и замки</h3><p class="small">Детские замки, ручки с ключом, пуш-баттон. От 700 ₽.</p></div>
+      </article>
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/24-addon-lamination.jpg" alt="Ламинация профиля" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Ламинация</h3><p class="small">Более 40 декоров: дерево, RAL-цвета, двусторонняя. От 18% к цене.</p></div>
+      </article>
+      <article class="addon-card">
+        <div class="addon-card__img"><img src="img/08-type-balcony.jpg" alt="Балкон под ключ" loading="lazy"></div>
+        <div class="addon-card__body"><h3 class="addon-card__name">Балкон «под ключ»</h3><p class="small">Утепление, отделка, электрика, тёплый пол. От 24 000 ₽/м².</p></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ================= 12 РЕАЛЬНЫЕ КЛИЕНТЫ ================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-head" style="justify-content: center; text-align: center;">
+      <div class="section-head__text" style="margin-inline: auto;">
+        <span class="eyebrow" style="margin-inline: auto;">Клиенты</span>
+        <h2 class="h-section">Что говорят наши клиенты</h2>
+      </div>
+    </div>
+    <div class="reviews-viewport">
+      <div class="reviews-track" id="reviewsTrack"></div>
+    </div>
+    <div class="carousel-ctrls">
+      <span class="carousel-ctrls__count" id="reviewsCount">1 / 6</span>
+      <button class="carousel-ctrls__btn" id="revPrev" aria-label="Предыдущий отзыв">‹</button>
+      <button class="carousel-ctrls__btn" id="revNext" aria-label="Следующий отзыв">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 13 КОНТАКТЫ + КАРТА ================= -->
+<section class="section section--tight" id="contacts">
+  <div class="container">
+    <div class="split">
+      <div class="split__text">
+        <span class="eyebrow">Контакты</span>
+        <h2 class="h-compact">Наш офис и шоурум</h2>
+        <p class="body">Приезжайте: покажем профили, фурнитуру и ламинацию вживую и рассчитаем окна на месте.</p>
+        <div class="contact-list">
+          <a class="contact-list__item" href="tel:+74950000000"><b>+7 (495) 000-00-00</b><span>ежедневно 8:00–22:00</span></a>
+          <a class="contact-list__item" href="mailto:hi@okna.ru"><b>hi@okna.ru</b><span>ответим в течение часа</span></a>
+          <span class="contact-list__item"><b>Москва, ш. Энтузиастов, 17</b><span>офис, шоурум и производство</span></span>
+        </div>
+        <div><button class="btn btn--primary btn--lg" data-cta>Вызвать замерщика — бесплатно</button></div>
+      </div>
+      <div class="split__img">
+        <div class="map-box" role="img" aria-label="Карта: Москва, ш. Энтузиастов, 17 — шоурум OKNA">
+          <div class="map-pin"></div>
+          <span class="map-box__label">Мы здесь · Москва, ш. Энтузиастов, 17</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 14 FOOTER ================= -->
 <footer class="footer">
   <div class="container footer__inner">
+    <div class="footer__cta">
+      <h2>Окна, о которых не придётся думать<br>ещё 10 лет</h2>
+      <div><a class="btn btn--white btn--lg" data-cta>Вызвать замерщика →</a></div>
+    </div>
     <div class="footer__grid">
       <div class="footer__col">
-        <h3>Glaso.</h3>
-        <p class="footer__about">Тёплые окна под ключ с 2008 года. Собственный завод в Москве, монтаж по ГОСТ, гарантия 10 лет.</p>
-        <a class="footer__phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
-        <a href="mailto:hi@glaso.ru">hi@glaso.ru</a>
+        <h3>Okna</h3>
+        <p class="small" style="color: rgba(255,255,255,.65);">Окна под ключ с 2008 года. Собственное производство, монтаж по ГОСТ, гарантия 10 лет.</p>
+        <a href="tel:+74950000000" style="font-weight: 600; color: var(--white);">+7 (495) 000-00-00</a>
+        <a href="mailto:hi@okna.ru">hi@okna.ru</a>
+        <p class="caption" style="color: rgba(255,255,255,.5);">Ежедневно 8:00–22:00<br>Москва, ш. Энтузиастов, 17</p>
       </div>
       <div class="footer__col">
-        <h3>Серии</h3>
-        <a href="#series">Норд — для квартир</a>
-        <a href="#series">Фьорд — энерголиния</a>
-        <a href="#series">Панорама — до 6 м</a>
-        <a href="#calc">Калькулятор</a>
+        <h3>Каталог</h3>
+        <a href="#types">Пластиковые окна</a>
+        <a href="#types">Алюминиевые окна</a>
+        <a href="#types">Панорамные окна</a>
+        <a href="#types">Балконы</a>
       </div>
       <div class="footer__col">
-        <h3>Компания</h3>
-        <a href="#tech">Технология</a>
-        <a href="#process">Как мы работаем</a>
-        <a href="#faq">Вопросы и ответы</a>
-        <a href="#contacts">Контакты</a>
+        <h3>Услуги</h3>
+        <a href="#config">Калькулятор</a>
+        <a href="#montage">Монтаж</a>
+        <a href="#addons">Дополнения</a>
       </div>
       <div class="footer__col">
         <h3>Покупателям</h3>
-        <a href="#">Оплата и рассрочка</a>
         <a href="#">Гарантия и сервис</a>
+        <a href="#">Оплата и рассрочка</a>
         <a href="#">Доставка</a>
+        <a href="#">Вопросы и ответы</a>
+        <a href="#contacts">Контакты</a>
         <a href="#">Telegram · VK · WhatsApp</a>
       </div>
     </div>
     <div class="footer__legal">
-      <span>© 2026 GLASO. Все права защищены.</span>
+      <span>© 2026 OKNA. Все права защищены.</span>
       <a href="#">Политика конфиденциальности</a>
       <a href="#">Публичная оферта</a>
     </div>
   </div>
 </footer>
 
-<!-- ================= DRAWER ================= -->
-<div class="backdrop" id="backdrop"></div>
+<!-- ================= MODAL DRAWER (замер) ================= -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
 <aside class="drawer" id="orderDrawer" aria-label="Форма заказа" aria-hidden="true">
   <div class="drawer__head">
-    <h3 id="drawerTitle">Вызвать замерщика</h3>
+    <h3 id="drawerTitle">Зафиксировать цену</h3>
     <button class="drawer__close" id="drawerClose" aria-label="Закрыть">✕</button>
   </div>
   <div class="drawer__body">
-    <p class="small" id="drawerSub">Оставьте контакты — менеджер подтвердит заявку и предложит время замера.</p>
-    <form class="dform" id="orderForm">
+    <p class="small" id="drawerSub">Оставьте контакты — менеджер подтвердит расчёт и предложит время замера.</p>
+    <form class="form form--light" id="orderForm">
       <input type="text" placeholder="Ваше имя" aria-label="Имя" required>
       <input type="tel" placeholder="+7 (___) ___-__-__" aria-label="Телефон" required>
       <input type="text" placeholder="Адрес (город, улица, дом)" aria-label="Адрес" required>
@@ -360,22 +486,24 @@
         <option>Сегодня, 18:00–21:00</option>
         <option>Завтра в течение дня</option>
       </select>
-      <button class="btn btn--accent btn--lg" type="submit" style="width: 100%;">Отправить заявку</button>
-      <p class="dform__note">Заявка ни к чему не обязывает · Без спама</p>
+      <button class="btn btn--primary btn--lg" type="submit" style="width: 100%;">Отправить заявку</button>
+      <p class="form__privacy">Заявка ни к чему не обязывает · Без спама</p>
     </form>
   </div>
 </aside>
 
-<div class="mmenu" id="mmenu" aria-hidden="true">
-  <button class="mmenu__close" id="mmenuClose" aria-label="Закрыть меню">✕</button>
-  <a href="#series">Серии</a>
-  <a href="#calc">Калькулятор</a>
-  <a href="#tech">Технология</a>
-  <a href="#faq">FAQ</a>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-menu__close" id="mobileClose" aria-label="Закрыть меню">✕</button>
+  <a href="#types">Окна</a>
+  <a href="#catalog">Каталог</a>
+  <a href="#config">Калькулятор</a>
+  <a href="#projects">Проекты</a>
+  <a href="#montage">Монтаж</a>
   <a href="#" data-cta>Замер</a>
 </div>
 
 <div class="toast" id="toast" role="status"></div>
 
+<script src="js/app.js"></script>
 </body>
 </html>
